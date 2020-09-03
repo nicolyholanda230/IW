@@ -498,6 +498,10 @@ section {
   font-size: 26px;
 }
 
+.about h4 a{
+  font-size: 18px;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -549,10 +553,120 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# editorial
 --------------------------------------------------------------*/
+.editorial {
+  padding-bottom: 30px;
+}
+
+.editorial p{
+  text-align: justify;
+}
+
+.editorial h4 a{
+  font-size: 18px;
+}
+
+.editorial .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+}
+
+.editorial .icon-box::before {
+  content: '';
+  position: absolute;
+  background: #fdeff2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.editorial .icon-box:hover::before {
+  background: #e43c5c;
+  top: 0;
+  border-radius: 0px;
+}
+
+.editorial .icon {
+  margin-bottom: 15px;
+}
+
+.editorial .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #e43c5c;
+  transition: all 0.3s ease-in-out;
+}
+
+.editorial .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.editorial .title a {
+  color: #111;
+}
+
+.editorial .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.editorial .icon-box:hover .title a, .services .icon-box:hover .description {
+  color: #fff;
+}
+
+.editorial .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.a .editorial .content .btn-learn-more {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #e43c5c;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #e43c5c;
+}
+
+.editorial.content .btn-learn-more:hover {
+  background: #e43c5c;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* services */
+
 .services {
   padding-bottom: 30px;
+}
+
+.services p{
+  text-align: justify;
+}
+
+.services h4 a{
+  font-size: 18px;
 }
 
 .services .icon-box {
@@ -834,6 +948,10 @@ section {
   position: relative;
   overflow: hidden;
   border: 2px solid #f9f9f9;
+}
+
+.pricing p{
+  text-align: justify;
 }
 
 .pricing .box h3 {
@@ -1362,11 +1480,19 @@ section {
   padding: 40px 0 20px 0;
 }
 
+.blog .influencia{
+   margin-left: 50;
+    margin-right: 50;
+    width: 6em;
+    text-align:justify;
+}
+
 .blog .entry {
   padding: 20px;
   margin-bottom: 60px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align:justify;
 }
 
 .blog .entry .entry-img {
@@ -1381,6 +1507,7 @@ section {
   font-weight: bold;
   padding: 0;
   margin: 0 0 20px 0;
+  
 }
 
 .blog .entry .entry-title a {
@@ -1427,6 +1554,7 @@ section {
 .blog .entry .entry-content p {
   line-height: 24px;
   font-size: 15px;
+  text-align: justify;
 }
 
 .blog .entry .entry-content .read-more {
